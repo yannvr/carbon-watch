@@ -1,6 +1,12 @@
 {
   "name": "carbon-watch",
+  "version": "1.0.0",
+  "description": "A blockchain application for tracking carbon emissions and offsets",
   "module": "index.ts",
+  "scripts": {
+    "start": "bun run index.ts",
+    "test": "bun test"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -13,5 +19,8 @@
     "chai": "^5.1.1",
     "dotenv": "^16.4.5",
     "truffle-plugin-verify": "^0.6.7"
-  }
+  },
+  "keywords": ["blockchain", "carbon", "emissions", "celo", "truffle"],
+  "author": "",
+  "license": "MIT"
 }
