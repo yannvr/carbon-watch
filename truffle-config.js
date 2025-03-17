@@ -7,6 +7,9 @@ const mnemonic = process.env.MNEMONIC;  // Store your mnemonic in a .env file
 // const infuraKey = process.env.INFURA_KEY;  // If needed, for fallback to Infura
 
 module.exports = {
+  plugins: [
+    'truffle-plugin-verify'
+  ],
   networks: {
     alfajores: {
       provider: () =>
@@ -41,5 +44,8 @@ module.exports = {
     solc: {
       version: "0.8.0", // Fetch exact version from solc-bin (default: truffle's version)
     },
+    api_keys: {
+      alfajores_celoscan: process.env.CELOSCAN_API_KEY
+    }
   },
 };
